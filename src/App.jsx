@@ -21,7 +21,7 @@ function App() {
       <h1>Hola</h1>
       <div className="card">
         <button onClick={addValue}>
-          El contador es {count}.0
+          El contador es {count}.0  
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
