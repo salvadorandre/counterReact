@@ -4,8 +4,8 @@ const App = () => {
 
     return (
         <>
-
-            <CounterApp value={0}/> 
+            {console.log('render')}
+            <CounterApp value={10}/> 
         </>
 
     )

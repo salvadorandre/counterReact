@@ -13,6 +13,16 @@ const CounterApp = ( { value } ) => {
         setCounter(counter - 1)
     }
 
+    function handleReset() { 
+        setCounter(value)
+    }
+
+    function handleRandom() { 
+        let newValue =  Math.round(Math.random(100) * 100)
+
+        setCounter(newValue)
+    }
+
     return (
         <>
             <h1>CounterApp</h1>
@@ -21,6 +31,8 @@ const CounterApp = ( { value } ) => {
 
             <button onClick={handleAdd}> + 1 </button>
             <button onClick={handleRest}> - 1</button>
+            <button onClick={handleReset}>Reset</button>
+            <button onClick={handleRandom}>RandomVal</button>
         </>
     )
 }
