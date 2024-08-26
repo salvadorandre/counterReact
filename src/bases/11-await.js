@@ -1,6 +1,6 @@
 
 
-const getImagen = async () => { 
+export const getImagen = async () => { 
     const apiKey = '728ImSHnOOLGpoUF8mzcUGdkgkKCC2Rg'; 
     const httpPeticion = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apiKey}`); 
     const { data } = await httpPeticion.json()
@@ -13,6 +13,4 @@ const getImagen = async () => {
     
     document.body.appendChild(img)
 }
-
-getImagen()
 

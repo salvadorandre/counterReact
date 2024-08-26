@@ -1,11 +1,10 @@
 import "./App.css"
-import CounterApp from "./CounterApp";
+import FirstApp from './FirstApp'
 const App = () => {
 
     return (
         <>
-            {console.log('render')}
-            <CounterApp value={10}/> 
+            <FirstApp name="Andre" subtitulo="Papu"/>             
         </>
 
     )
